@@ -3,163 +3,88 @@
   margin: 0;
   box-sizing: content-box;
 }
-
-/* Estilos generales */
-body {
-  margin: 0;
-  padding: 0;
-}
-
-/* Estilos del navbar */
-header {
+.topnav {
   background-color: #333;
-  color: #fff;
+  overflow: hidden;
 }
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-
-.navbarLogo {
-  font-size: 24px;
-}
-
-.navbar {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar-item {
-  margin-right: 10px;
-}
-
-.navbar-item a {
-  color: #fff;
-  text-decoration: none;
-  padding: 5px 10px;
-}
-
-.navbar-item a:hover {
-  background-color: #555;
-}
-/*Fin navbar*/
-
-section {
-  background-color: #f4f4f4;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  color: #333;
-  line-height: 1.6;
-}
-.hero {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
   text-align: center;
-  align-items: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-.hero h1 {
-  font-size: 50px;
-  color: #00bbff;
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-section h2 {
-  color: #333;
-  font-size: 50px;
-  margin-bottom: 10px;
+.topnav a.active {
+  background-color: #00bbff;
+  color: white;
 }
 
-section p {
-  margin-bottom: 20px;
+.topnav .icon {
+  display: none;
 }
 
-section h4 {
-  font-size: 20px;
-  margin-top: 30px;
-  margin-bottom: 10px;
+/*Imagen*/
+img {
+  max-width: 100%;
+  height: auto;
 }
-
-section ul {
-  padding-left: 20px;
+.avatar {
+  border-radius: 50%;
+  max-width: 25%;
+  padding: 15px;
 }
-
-section ul li {
-  margin-bottom: 10px;
-}
-
-/*seccion introduccion*/
+/* Estilos de sección */
 section {
-  background-color: #f4f4f4;
+  background-color: #fffb00;
   padding: 20px;
   font-family: Arial, sans-serif;
   color: #333;
   line-height: 1.6;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
 }
 
 section p {
-  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.2rem;
 }
-
-section div {
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
-section div p {
-  font-size: 20px;
-}
-
-section ul {
-  padding-left: 20px;
-}
-
-section ul li {
-  margin-bottom: 10px;
-}
-
-blockquote {
-  position: relative;
-  background: linear-gradient(
-    -45deg,
-    rgba(1, 154, 200, 0.575),
-    rgba(126, 225, 255, 0.596)
-  );
-  padding: 20px;
-  margin: 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  animation: lightReflection 10s infinite linear;
-  background-size: 300% 3 00%;
-}
-
-/* Estilos del footer */
-footer {
-  background-color: #f8f9fa;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-
-@keyframes lightReflection {
-  0% {
-    background-position: 100% 50%;
-    filter: brightness(1);
+/*Navbar Queries*/
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
   }
-  50% {
-    background-position: 0% 50%;
-    filter: brightness(0.8);
+  .topnav a.icon {
+    float: right;
+    display: block;
   }
-  100% {
-    background-position: 100% 50%;
-    filter: brightness(1);
+  .foto-persona {
+    border-radius: 50%;
+    max-width: 55%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
   }
 }
