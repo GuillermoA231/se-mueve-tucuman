@@ -1,0 +1,47 @@
+@media screen and (max-width: 1025px) {
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  article {
+    width: 100% !important;
+  }
+  article h1 {
+    font-size: 10vw;
+    text-align: center;
+    line-height: 16vw;
+  }
+  #imagen-objetivos{
+    height: auto;
+    width: auto;
+  }
+  article img.tucuman {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+  }
+}
+
+/** Responsive Testimonials**/
+
+@media screen and (max-width: 1201px) {
+  .testimonials-section {
+    margin-top: 5.385rem;
+  }
+  .section-2,
+  .section-4 {
+    grid-column: span 2;
+  }
+  .section-3 {
+    grid-row: span 1;
+    grid-column: span 4;
+  }
+}
+
+@media screen and (max-width: 801px) {
+  .testimonials-section > * {
+    grid-column: span 4;
+    grid-row: span 1;
+  }
+}

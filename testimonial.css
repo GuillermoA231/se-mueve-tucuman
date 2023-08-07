@@ -79,9 +79,10 @@ body::-webkit-scrollbar {
 }
 .section-2 {
   background-color: var(--dark-grayish-blue);
+  grid-column: span 2;
 }
 .section-3 {
-  grid-row: span 2;
+  grid-column: span 3;
 }
 .section-3 .highlight-content p {
   color: var(--dark-grayish-blue);
@@ -89,6 +90,25 @@ body::-webkit-scrollbar {
 .section-5 {
   background-color: var(--dark-blackish-blue);
   grid-column: span 2;
+}
+
+/** Yo **/
+
+.section-5{
+  grid-row: 3/1 ;
+  grid-column: 3 /-1;
+}
+.section-6{
+  grid-column: span 4;
+  background-color: var(--modarate-violet);
+  color: white;
+}
+.section-7, .section-8{
+  background-position: top right 18%;
+  background-size: 100px;
+  grid-column: span 2;
+  background-color: var(--dark-blackish-blue);
+  color: white;
 }
 
 /** Author **/
@@ -118,6 +138,8 @@ body::-webkit-scrollbar {
 }
 .author-description {
   font-size: 11px;
+  margin-left: 4px;
+  max-width: 100px;
 }
 
 /** Author Images **/
@@ -157,27 +179,4 @@ body::-webkit-scrollbar {
   font-size: 1rem;
   padding-top: 0.4rem;
   line-height: 1.4rem;
-}
-
-/** Responsive **/
-
-@media screen and (max-width: 1201px) {
-  .testimonials-section {
-    margin-top: 5.385rem;
-  }
-  .section-2,
-  .section-4 {
-    grid-column: span 2;
-  }
-  .section-3 {
-    grid-row: span 1;
-    grid-column: span 4;
-  }
-}
-
-@media screen and (max-width: 801px) {
-  .testimonials-section > * {
-    grid-column: span 4;
-    grid-row: span 1;
-  }
 }

@@ -3,12 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
-body{
+body {
   color: #0199c8;
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 img {
   max-width: 100%;
@@ -46,12 +46,11 @@ ul {
 }
 
 section {
-  padding: 5% 15%;
   display: flex;
   text-align: center;
-  align-items: flex-start;
-    flex-direction: row;
-    justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 article {
@@ -81,7 +80,7 @@ article div {
 }
 
 article h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: left;
   margin-bottom: 1rem;
 }
@@ -109,6 +108,7 @@ article h2 {
 
 .introduccion li:hover {
   transform: scale(1.05);
+  color: #004458;
 }
 
 article img.tucuman {
@@ -117,7 +117,7 @@ article img.tucuman {
   height: auto;
   margin-top: 1rem;
 }
-#imagen-objetivos{
+#imagen-objetivos {
   width: 35em;
   height: 35em;
   max-width: 600px;
@@ -128,23 +128,27 @@ article img.tucuman {
 .hero {
   width: 100%;
   margin: 0 auto;
+  align-items: flex-start;
 }
 
 .hero article.tucuman {
   width: 100%;
 }
-
-.hero .left{
+.left aside{
+  display: flex;
+  justify-content: center;
+}
+.hero .left {
   width: 33%;
   text-align: left;
 }
-.hero .left li{
+.hero .left li {
   margin: 10px 0px;
 }
 
 .hero button {
-	border: none;
-	font: inherit;
+  border: none;
+  font: inherit;
   border-color: #00bbff;
   color: #003e55;
   padding: 1em;
@@ -153,10 +157,9 @@ article img.tucuman {
   transition: all 150ms ease-in-out;
   border-radius: 20%;
 }
-.hero button:hover{
+.hero button:hover {
   box-shadow: 0 0 10px 0 #00bbff inset, 0 0 10px 4px #00bbff;
 }
-
 
 .introduccion {
   align-items: flex-start !important;
@@ -176,19 +179,4 @@ figure {
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 32px;
-}
-
-@media screen and (max-width: 1025px) {
-  section {
-    display: flex;
-    flex-direction: column;
-  }
-  article{
-    width: 100% !important;
-  }
-  article h1 {
-    font-size: 15vw;
-    text-align: center;
-    line-height: 16vw;
-  }
 }
