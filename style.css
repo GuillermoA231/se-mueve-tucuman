@@ -80,9 +80,10 @@ article div {
 }
 
 article h2 {
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: left;
   margin-bottom: 1rem;
+  color: black;
 }
 
 .introduccion ul {
