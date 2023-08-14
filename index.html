@@ -1,473 +1,338 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Indice</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="testimonial.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="test.css">
+    <title>Test Flexbox</title>
   </head>
   <body>
     <header>
-      <nav class="topnav" id="myTopnav">
-        <a href="#hero" class="active">SE MUEVE TUCUMÁN</a>
-        <a href="#objetivos">Objetivos</a>
-        <a href="#testimonios">Testimonios</a>
-        <a href="#sobrenosotros">Sobre Nosotros</a>
-        <a href="#galeria">Galería</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </nav>
+      <header>
+        <nav class="topnav" id="myTopnav">
+          <a href="#hero" class="active">SE MUEVE TUCUMÁN</a>
+          <a href="#objetivos">Objetivos</a>
+          <a href="#testimonios">Testimonios</a>
+          <a href="#sobrenosotros">Sobre Nosotros</a>
+          <a href="#galeria">Galería</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </nav>
+      </header>
     </header>
     <main>
-      <section id="hero">
-        <article class="intro">
-          <h1>Se Mueve Tucumán</h1>
-          <p>
-            El Ministerio de Salud Pública de Tucumán, liderando la lucha contra
-            el sedentarismo, adoptando medidas concretas y factibles tendientes
-            a disminuir su prevalencia y sumando a distintos actores sociales y
-            estatales desarrolla el Programa Provincial de Actividad Física ‘’Se
-            Mueve Tucumán’’, con el objetivo de abordar la salud de forma
-            integral promoviendo de manera organizada, acompañada y administrada
-            la actividad física como un recurso terapéutico y como un componente
-            de nuestro cotidiano.
-          </p>
+      <section class="hero">
+        <article class="left">
+          
+          <h1>Mejora tu calidad de Vida</h1>
+          <h2>Haciendo Actividad Fisica</h2>
+          <div class="carousel">
+            <ul class="carousel__list">
+              <li class="carousel__item" data-pos="-2">Fomentamos hábitos saludables y una mejor calidad de vida mediante la promoción de la actividad física como una rutina diaria y una herramienta de rehabilitación y tratamiento.</li>
+              <li class="carousel__item" data-pos="-1">Desde pausas activas en el trabajo hasta terapias dinámicas en hospitales, integración de la actividad física en la rehabilitación cardiovascular y más</li>
+              <li class="carousel__item" data-pos="0">Especialistas en medicina del deporte actúan como consultores, brindando apoyo y promoción a equipos de diferentes efectores.
+              <li class="carousel__item" data-pos="1">4</li>
+              <li class="carousel__item" data-pos="2">5</li>
+            </ul>
+          </div>
         </article>
-        <img
-          src="./resources/logoTr.png"
-          alt="Logo"
-          srcset=""
-          class="tucuman"
-        />
+        <article class="right">
+          <img
+            src="./resources/logoTr.png"
+            alt="Logo"
+            srcset=""
+            class="tucuman"
+          />
+        </article>
       </section>
-      <!--Presentación-->
-      <hr />
-     
-<section id="presentacion">
-  <h2>Programa Provincial de Actividad Física 'Se Mueve Tucumán'</h2>
-  <div class="presentacion-intro">
-    <p>
-      El Ministerio de Salud Pública presenta 'Se Mueve Tucumán', un programa integral de actividad física que promueve hábitos saludables y una mejor calidad de vida en la población.
-    </p>
-  </div>
-  <div class="actividades">
-    <h4>Actividades propuestas:</h4>
-    <ul>
-      <li>Pausas activas en ámbitos laborales</li>
-      <li>Inclusión de terapias dinámicas en pacientes hospitalizados</li>
-      <li>Integración de la actividad física en la rehabilitación cardiovascular y otras patologías crónicas</li>
-      <li>Articulación con la Escuela de Pacientes</li>
-      <li>Vinculación de la actividad física con destrezas deportivas, terapias de rehabilitación e inclusión social</li>
-    </ul>
-  </div>
-  <p>
-    El Ministerio de Salud Pública convoca a colaborar con diferentes ministerios, dependencias del Gobierno de la Provincia de Tucumán, municipios, comunas, sector privado y organizaciones sociales para sumar propuestas y actividades en el marco de este programa.
-  </p>
-</section>
-      <!--Introducción-->
-      <hr />
-      <section id="introduccion">
-        <div class="container">
-          <h2><i class="bi bi-bookmark-heart-fill"></i> Introducción</h2>
-          <p>
-            <i class="bi bi-info-circle-fill"></i>
-            La Organización Mundial de la Salud define a la actividad física
-            como cualquier movimiento corporal producido por los músculos
-            esqueléticos, con el consiguiente consumo energético (OMS, 2022). El
-            aumento del sedentarismo (falta, ausencia o escasa actividad física)
-            que se observa no solo a nivel regional, sino en todo el mundo, hace
-            de este problema una cuestión de Salud Pública, reconocida a nivel
-            nacional y por las organizaciones internacionales de salud. La OMS
-            ha declarado que el sedentarismo está directamente asociado a las
-            enfermedades cardiovasculares, como la hipertensión arterial y los
-            estilos de vida que son incompatibles con hábitos saludables, como
-            el consumo de tabaco y el sobrepeso. El incremento de las ECNT
-            (Enfermedades Crónicas No Transmisibles) tienen, entre otras causas,
-            una vinculación con los hábitos y estilos de vida.
-          </p>
-          <!-- Rest of the code -->
-          <div>
-            <p>
-              <strong
-                ><i class="bi bi-exclamation-diamond-fill"></i> Datos sobre el
-                sedentarismo en Tucumán:</strong
-              >
-            </p>
-            <ul>
-              <li>
-                <i class="bi bi-check-circle-fill"></i> Más del 50% de la
-                población es sedentaria.
-              </li>
-              <li>
-                <i class="bi bi-check-circle-fill"></i> El porcentaje de
-                sedentarismo es mayor que la media nacional (41%).
-              </li>
-              <li>
-                <i class="bi bi-check-circle-fill"></i> Las condiciones de
-                sedentarismo se incrementan debido al uso excesivo de tecnología
-                y falta de acceso a espacios con actividades físicas adecuadas.
-              </li>
-            </ul>
-          </div>
-          <div>
-            <p>
-              <strong
-                ><i class="bi bi-exclamation-triangle-fill"></i> Consecuencias
-                del sedentarismo:</strong
-              >
-            </p>
-            <ul>
-              <li>
-                <i class="bi bi-check-circle-fill"></i> Enfermedades
-                cardiovasculares, como la hipertensión arterial.
-              </li>
-              <li>
-                <i class="bi bi-check-circle-fill"></i> Estilos de vida
-                incompatibles con hábitos saludables, como el consumo de tabaco
-                y el sobrepeso.
-              </li>
-              <li>
-                <i class="bi bi-check-circle-fill"></i> Incremento de las
-                Enfermedades Crónicas No Transmisibles (ECNT).
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <!--Palabras del ministro-->
-      <hr />
-      <section>
-        <h2>Palabras del Ministro</h2>
-        <h3>Dr. Luis Medina Ruiz</h3>
-        <img
-          src="./resources/fotoMinistro.jpg"
-          alt="foto-ministro"
-          class="avatar"
-        />
-        <p>
-          "Desde el momento en que incrementamos la actividad física, cualquiera
-          sea la edad o la condición de salud, comienzan los beneficios: el
-          organismo se fortifica y mejora la calidad de vida, alejando las
-          posibilidades de padecer <strong>enfermedades crónicas</strong> y sus
-          consecuencias."
-        </p>
-        <p>
-          "Es importante que toda la población
-          <strong>incremente el nivel de actividad física</strong>, dado que el
-          sedentarismo deteriora la calidad de vida y desencadena las
-          enfermedades de mayor prevalencia y mortalidad. Pero además es
-          necesario que la comunidad adopte las condiciones de hábitos
-          saludables que acompañen a la actividad física, tales como una
-          <strong>nutrición adecuada</strong>, controles periódicos de salud y
-          cambios culturales en beneficio de una mejor salud para toda la
-          comunidad."
-        </p>
-      </section>
-      <!--Objetivos del programa-->
-      <hr />
-      <section id="objetivos">
-        <h2>Objetivos del programa:</h2>
-        <ul>
-          <li>
-            Promover la actividad física en la población tucumana integrando sus
-            prácticas en lo cotidiano, junto a otros hábitos saludables de vida.
-          </li>
-          <li>
-            Aumentar los niveles de actividad física y deportiva en la población
-            general.
-          </li>
-          <li>
-            Incrementar la aplicación de la actividad física como una
-            herramienta terapéutica, incorporándola a los planes de tratamiento
-            de diferentes patologías o condiciones de salud.
-          </li>
-          <li>
-            Mejorar el conocimiento del impacto positivo de la práctica regular
-            de actividad física por parte de los profesionales de la salud, el
-            deporte, la educación y la ciudadanía en general.
-          </li>
-        </ul>
-      </section>
-      <!--Linea de acción-->
-      <hr />
-      <section>
-        <h2>Línea de Acción</h2>
-        <ul>
-          <li>
-            <strong>Implementar</strong> un programa de capacitación para el
-            recurso humano en salud, con el objetivo de poner en valor la
-            actividad física como componente de las prácticas en salud.
-          </li>
-          <li>
-            <strong>Desarrollar</strong> un plan de comunicación masiva que
-            aporte información sobre los alcances del programa y facilite el
-            acceso a las actividades.
-          </li>
-          <li>
-            <strong>Conformar</strong> equipos interdisciplinarios para el
-            desarrollo del programa.
-          </li>
-          <li>
-            <strong>Crear</strong> Equipos de Tratamiento Dinámico (ETD) para
-            coordinar actividades físicas en áreas de salud integrándose como un
-            recurso terapéutico.
-          </li>
-          <li>
-            <strong>Establecer</strong> acuerdos de trabajo con municipios,
-            comunas, organizaciones sociales, actores del sector privado
-            invitándolos a sumarse a la propuesta del programa.
-          </li>
-          <li>
-            <strong>Elaborar</strong> guías de trabajo y protocolos de
-            implementación para cada una de las actividades procurando así que
-            sea segura.
-          </li>
-          <li>
-            <strong>Fortalecer</strong> la <i>“Pausa Activa”</i> en el ámbito
-            del Ministerio de Salud y de todas las reparticiones públicas y
-            privadas que deseen sumarse a la propuesta.
-          </li>
-          <li>
-            <strong>Sistematizar</strong> las prácticas de actividad física al
-            programa de Escuela de Pacientes.
-          </li>
-          <li>
-            <strong>Impulsar</strong> la actividad física para la rehabilitación
-            cardiovascular.
-          </li>
-          <li>
-            <strong>Proponer</strong> la definición de iniciativas vinculadas a
-            espacios amigables con la actividad física, sumando acciones del
-            Programa Nacional de Municipios y Comunas Saludables.
-          </li>
-          <li>
-            <strong>Coordinar</strong> el programa con las intervenciones
-            territoriales en prevención y atención de las adicciones, como
-            recurso de terapia socializante y rehabilitación integral.
-          </li>
-          <li>
-            <strong>Diseñar</strong>, junto a la Secretaria de Turismo y
-            Secretaria de Deportes circuitos turísticos que faciliten la
-            actividad física: caminatas con visitas guiadas; bicicletas urbanas
-            y periurbanas.
-          </li>
-          <li>
-            <strong>Impulsar</strong> la puesta en valor de espacios públicos
-            como <i>“espacios amigables con la salud”</i>, también propuestas
-            como <i>“escaleras amigables”</i>; <i>“plazas saludables”</i>, entre
-            otras.
-          </li>
-        </ul>
-      </section>
-      <!--Testimonios-->
-      <hr />
-      <section id="testimonios">
+      <section class="introduccion">
         <article>
-          <h3>
-            El desarrollo sistematizado de la actividad física se inserta como
-            un soporte fundamental para el programa, un modelo de trabajo donde
-            las personas no solo encuentran espacios de terapias de
-            rehabilitación específica, sino que por el intercambio de
-            experiencias resuelven situaciones comunes a sus patologías, con el
-            acompañamiento interdisciplinario de profesionales de la salud y en
-            donde la actividad física es parte de dicho proceso de recuperación,
-            evitando complicaciones e intervenciones que pueden ser prevenibles.
-          </h3>
-          <br />
-          <figure>
-            <img src="imagen" alt="imagen apertura de servicio" />
-          </figure>
-          <blockquote class="glass-blockquote">
-            <p>“Acecha a la sociedad la cultura tóxica de la inmovilidad.”</p>
-            <footer>
-              - Dr. Jorge Vázquez (Eldorado, Misiones). Federación Argentina de
-              Medicina del Deporte.
-            </footer>
-          </blockquote>
+          <img
+            id="imagen-objetivos"
+            src="./resources/actividades/cardio.jpg"
+            alt="Logo"
+            srcset=""
+          />
         </article>
-        <h2>Testimonio de Pacientes</h2>
-        <blockquote>
-          <p>
-            “La actividad física es algo que cambió mi vida, dio un giro enorme.
-            Hace 5 años que concurro a este hospital y de parte de los
-            profesores recibí mucha contención emocional y espiritual. Estoy muy
-            agradecida “.
-          </p>
-          <footer>Silvia, “Escuela de Pacientes” - Hospital Avellaneda.</footer>
-        </blockquote>
-        <blockquote>
-          <p>
-            “La gimnasia es nuestro escape de los problemas de la vida
-            cotidiana, es el momento para hacer algo bueno por nosotros mismos,
-            por nuestra salud física y mental, pero principalmente, es nuestra
-            fortaleza emocional. Me encanta ir a gimnasia al hospital porque
-            necesito mejorar mi salud y a la vez, me hice de amigas muy buenas
-            con las cuales compartimos lindos momentos”.
-          </p>
-          <footer>
-            María Silvia, “Escuela de Pacientes” - Hospital Avellaneda
-          </footer>
-        </blockquote>
-        <blockquote>
-          <p>
-            “A mí en particular, me encanta porque siento que nos dan el apoyo
-            que muchas necesitamos, me refiero a sentirnos bien emocionalmente.
-            Somos muchas las que tenemos la necesidad de sentir esa felicidad
-            cuando nos toca ir los martes y viernes”
-          </p>
-          <footer>
-            Liliana, “Escuela de Pacientes” - Hospital Avellaneda.
-          </footer>
-        </blockquote>
-        <blockquote>
-          <p>
-            “Desde hace más de 15 años, el Ministerio de Salud Pública de la
-            Provincia de Tucumán apuesta fuertemente al movimiento y a la
-            actividad física considerada como uno de los factores fundamentales
-            para la prevención de enfermedades y la promoción de salud. Se
-            vienen generando diversos programas, entre ellos, “Salud en
-            Movimiento”, un programa que se realizaba en diferentes plazas y
-            parques de la provincia, “Anímate”, que se desarrolló en el ámbito
-            laboral y actividad física para el personal del Sistema Provincial
-            de Salud. En el 2018, se puso en marcha la “Escuela de Pacientes”,
-            que consiste en empoderar al paciente para que conozca cómo es el
-            tratamiento y la mejor forma de tratarse, sobre todo con las
-            enfermedades crónicas no transmisibles. El objetivo es ampliar la
-            Escuela de Pacientes a toda la provincia y en los distintos niveles
-            de atención. La actividad física se presenta como promotora del
-            autocuidado y de la vida saludable. Nosotros decimos que construimos
-            salud cada vez que hacemos movimiento.”
-          </p>
-          <footer>
-            Gustavo Toledo, “Escuela de Pacientes” - Profesor de Educación
-            Física y Coordinador Provincial de la Escuela de Pacientes.
-          </footer>
-        </blockquote>
-
-        <blockquote>
-          <p>
-            “La actividad física comenzó desde el Ministerio de Salud Pública
-            para los empleados del Sistema de Salud en el 2009 con el Dr.
-            Alberto Sabaj y en colaboración con el Dr. Cayetano Bellomio. El
-            programa se llamaba “Anímate” y consistía en realizar activi- dad
-            física en los lugares de trabajo durante 15 a 20 minutos. Cabe
-            destacar que Tucu- mán fue pionero con la actividad física en los
-            lugares de trabajo. Luego, se comenzó a realizar actividad física en
-            las plazas y parques contando con una ambulancia del 107 en cada
-            espacio. <br />
-            Tucumán empezó con “Las entradas en calor” en las distintas
-            actividades que se ha- cían en las maratones en donde se convocaba a
-            los profesores del sistema de salud para iniciar las entradas en
-            calor. Hoy, se sigue haciendo. <br />
-            También hemos sido pioneros en las “Pausas Activas” en congresos,
-            simposios, etc. En los nodos de vacunación, realizando actividad
-            física mientras se espera la aplica- ción de las mismas. Tucumán
-            siempre estuvo posicionado a nivel nacional e interna- cional en la
-            actividad física como promotora de salud.”
-          </p>
-          <footer>Adolfo Steimberg - Profesor de actividad física.</footer>
-        </blockquote>
-
-        <blockquote>
-          <p>
-            “El “ABC Postural” surge como propuesta educativa sobre la
-            importancia y benefi- cios que a largo plazo trae ejercitarse de
-            manera regular, creando un escenario ideal para el fomento de la
-            actividad física y hábitos saludables, para prevenir lesiones,
-            patologías y otras condiciones resultantes del sedentarismo,
-            entendiendo su relación directa con cambios metabólicos y
-            estructurales en el cuerpo humano. Se edifica a partir de la
-            necesidad de incluir un “break” al estrés del día para activarse e
-            introducir movimientos en sesiones de 10 minutos, que incluyen
-            ejercicios de movilidad articular y elasticidad muscular para el
-            incremento de la flexibilidad, ejercicios posturales de relajación y
-            respiratorios, en busca de la conciencia corporal para reducir el
-            riesgo de lesiones osteo articulares y musculares por sobrepeso,
-            asociadas a la práctica labo- ral y contrarrestando lo repetitivo de
-            las actividades profesionales.’’
-          </p>
-          <footer>
-            Luciana Brito - Profesora de Educación Física y miembro del Programa
-            de Bienestar Laboral.
-          </footer>
-        </blockquote>
-
-        <blockquote>
-          <p>
-            “Fuimos diseñados para el movimiento. Casi la mitad de nuestro peso
-            es músculo. Esto resultó fundamental para la sobrevivencia y largos
-            desplazamientos del ser humano. Los avances tecnológicos fueron
-            disminuyendo esas exigencias, pero el cuerpo no cambió y la
-            inmovilidad emergente trajo consecuencias graves que aún no
-            terminamos de apreciar. Invadió todas las edades. La padecen los
-            adolescentes y adultos, precipita a los ma- yores a la sarcopenia
-            haciéndolos dependientes. Y lo más preocupante, es que ya tenemos
-            niños sedentarios y con problemas de salud como consecuencia. <br />
-
-            Pareciera que la sociedad actualmente entiende este riesgo, sin
-            embargo, cada uno lo siente como ajeno. Hay algo más grave: la
-            aparición de trastornos metabólicos por no quemar las sustancias
-            energéticas de las que disponemos y el consecuente incremento de
-            enfermedades no transmisibles como diabetes, arteriosclerosis y
-            sobrepeso, que van en aumento y tienen un alto costo social.
-            <br />
-
-            Romper ese círculo vicioso es, además de simple, muy agradable: una
-            caminata diaria, que bien puede ser parte del camino a nuestro
-            trabajo, una bicicleteada con nuestros amigos y familia, aumentar
-            las actividades cotidianas, utilizar las escaleras en forma
-            progresiva. Quienes incrementan su actividad física, se predisponen
-            a adoptar otros há- bitos de vida saludables, como mejorar su
-            alimentación o abandonar hábitos tóxicos.
-            <br />
-
-            Tenemos que aprovechar ese aparato locomotor que nos fue útil para
-            sobrevivir como especie, vivir mejor y evitar consecuencias que no
-            aparecen en lo inmediato pero sí con el correr de pocos años. Es
-            hora de animarnos a comenzar a movernos y adoptar hábitos
-            saludables. De este modo, estaremos dando un mensaje a nuestros
-            hijos y a nuestros seres queridos: el ejemplo es la mejor manera de
-            enseñar”.
-          </p>
-          <footer>Dr. Cayetano Bellomio - Coordinador del programa</footer>
-        </blockquote>
-
-        <blockquote>
-          <p>
-            “Durante mucho tiempo la gran mayoría de los programas de salud
-            tuvieron la perspecti- va de la enfermedad como dispositivo de
-            intervención. En este sentido, un programa está dirigido a abordar
-            la asistencia y recuperación de las personas con base en patologías
-            prevalentes o preexistentes. Visto como una cuestión que requiere
-            intervenciones inte- grales, los programas tienen en gran parte, una
-            mirada sesgada que pone su énfasis en el proceso enfermedad.
-            <br />
-
-            Ya en las puertas de la tercera reforma del sistema de salud, el
-            Ministerio de Salud de la Provincia de Tucumán presenta el Programa
-            “Se mueve Tucumán”, una estrategia que enfatiza la actividad física
-            como recurso integrante del proceso salud-enfermedad, pero que a
-            diferencia de otros, su perspectiva está puesta en la prevención y
-            promoción. Un programa que recupera y fortalece acciones que ya se
-            realizan desde el Ministerio de Sa- lud y que propone un “modo de
-            hacer salud”. “Se mueve Tucumán” habla de prevención, promoción,
-            protección, cuidados, vínculos, atención, acompañamiento,
-            comunicación, capacitación y sobre todo, de una mejor calidad de
-            vida para todos los tucumanos y tucumanas”.
-          </p>
-          <footer>Dr. David Strasorier - Coordinador del programa</footer>
-        </blockquote>
+        <article>
+          <div>
+            <h2>Actividades propuestas</h2>
+            <ul id="actividades-list">
+              <li id="actividad1">Pausas activas en ámbitos laborales</li>
+              <li id="actividad2">Inclusión de terapias dinámicas en pacientes hospitalizados</li>
+              <li id="actividad3">Integración de la actividad física en la rehabilitación cardiovascular y otras patologías crónicas</li>
+              <li id="actividad4">Articulación con la Escuela de Pacientes</li>
+              <li id="actividad5">Vinculación de la actividad física con destrezas deportivas, terapias de rehabilitación e inclusión social</li>
+            </ul>
+          </div>
+        </article>
       </section>
-      <!--Galeria-->
+      
+      
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+
+            <!-- Section 1 -->
+            <section class="section-1">
+
+                <!-- Author -->
+                <section class="author">
+
+                    <img class="author-img" src="./resources/fotoMinistro.jpg" alt="author-img">
+                    <section class="author-info">
+
+                        <p class="author-name">María Silvia</p>
+                        <p class="author-description">“Escuela de Pacientes” Hospital Avellaneda</p>
+                    </section>
+                </section>
+                <!-- Highlighted Content -->
+                <section class="highlight-content">
+
+                    <p>“La gimnasia es nuestro escape de los problemas de la vida cotidiana,
+          es el momento para hacer algo bueno por nosotros mismos, por nuestra
+          salud física y mental, pero principalmente, es nuestra fortaleza
+          emocional. Me encanta ir a gimnasia al hospital porque necesito
+          mejorar mi salud y a la vez, me hice de amigas muy buenas con las
+          cuales compartimos lindos momentos”.</p>
+                </section>
+            </section>
+            <!-- Section 2 -->
+            <section class="section-2">
+
+                <!-- Author -->
+                <section class="author">
+
+                    <img class="author-img" src="./resources/fotoMinistro.jpg" alt="author-img">
+                    <section class="author-info">
+
+                        <p class="author-name">Silvia</p>
+                        <p class="author-description">“Escuela de Pacientes” Hospital Avellaneda</p>
+                    </section>
+                </section>
+                <!-- Highlighted Content -->
+                <section class="highlight-content">
+
+                    <p>
+                      “La actividad física es algo que cambió mi vida, dio un giro enorme.
+                      Hace 5 años que concurro a este hospital y de parte de los profesores
+                      recibí mucha contención emocional y espiritual. Estoy muy agradecida.”
+                    </p>
+                </section>
+            </section>
+            
+            <!-- Section 3 -->
+            <section class="section-3">
+
+                <!-- Author -->
+                <section class="author">
+
+                    <img class="author-img" src="./resources/fotoMinistro.jpg" alt="author-img">
+                    <section class="author-info">
+
+                        <p class="author-name">Liliana</p>
+                        <p class="author-description">“Escuela de Pacientes” Hospital Avellaneda</p>
+                    </section>
+                </section>
+                <!-- Highlighted Content -->
+                <section class="highlight-content">
+
+                    <p>“La gimnasia es nuestro escape de los problemas de la vida cotidiana,
+                      es el momento para hacer algo bueno por nosotros mismos, por nuestra
+                      salud física y mental, pero principalmente, es nuestra fortaleza
+                      emocional. Me encanta ir a gimnasia al hospital porque necesito
+                      mejorar mi salud y a la vez, me hice de amigas muy buenas con las
+                      cuales compartimos lindos momentos”
+                    </p>
+                </section>
+            </section>
+            <!-- Section 4 -->
+            <section class="section-4">
+
+                <!-- Author -->
+                <section class="author">
+
+                    <img class="author-img" src="./resources/fotoMinistro.jpg" alt="author-img">
+                    <section class="author-info">
+
+                        <p class="author-name"> Dr. Jorge Vázquez</p>
+                        <p class="author-description">Federación Argentina de
+                          Medicina del Deporte.</p>
+                    </section>
+                </section>
+                <!-- Highlighted Content -->
+                <section class="highlight-content">
+
+                    <p>“Acecha a la sociedad la cultura tóxica de la inmovilidad.”
+                    </p>
+                </section>
+            </section>
+            <!-- Section 5 -->
+            <section class="section-5">
+
+                <!-- Author -->
+                <section class="author">
+
+                    <img class="author-img" src="./resources/fotoMinistro.jpg" alt="author-img">
+                    <section class="author-info">
+
+                        <p class="author-name"> Luciana Brito</p>
+                        <p class="author-description">Profesora de Educación Física y Miembro del Programa
+                          de Bienestar Laboral</p>
+                    </section>
+                </section>
+                <!-- Highlighted Content -->
+                <section class="highlight-content">
+
+                    <p>
+                      “El “ABC Postural” surge como propuesta educativa sobre la importancia
+                      y benefi- cios que a largo plazo trae ejercitarse de manera regular,
+                      creando un escenario ideal para el fomento de la actividad física y
+                      hábitos saludables, para prevenir lesiones, patologías y otras
+                      condiciones resultantes del sedentarismo, entendiendo su relación
+                      directa con cambios metabólicos y estructurales en el cuerpo humano.
+                      Se edifica a partir de la necesidad de incluir un “break” al estrés
+                      del día para activarse e introducir movimientos en sesiones de 10
+                      minutos, que incluyen ejercicios de movilidad articular y elasticidad
+                      muscular para el incremento de la flexibilidad, ejercicios posturales
+                      de relajación y respiratorios, en busca de la conciencia corporal para
+                      reducir el riesgo de lesiones osteo articulares y musculares por
+                      sobrepeso, asociadas a la práctica labo- ral y contrarrestando lo
+                      repetitivo de las actividades profesionales.’’
+                    </p>
+                </section>
+            </section>
+            
+            <section class="section-6">
+
+              <!-- Author -->
+              <section class="author">
+
+                  <img class="author-img" src="./resources/fotoMinistro.jpg" alt="author-img">
+                  <section class="author-info">
+
+                      <p class="author-name">Adolfo Steimberg</p>
+                      <p class="author-description">Profesor de actividad física.</p>
+                  </section>
+              </section>
+              <!-- Highlighted Content -->
+              <section class="highlight-content">
+
+                  <p>“La actividad física comenzó desde el Ministerio de Salud Pública para
+                    los empleados del Sistema de Salud en el 2009 con el Dr. Alberto Sabaj
+                    y en colaboración con el Dr. Cayetano Bellomio. El programa se llamaba
+                    “Anímate” y consistía en realizar activi- dad física en los lugares de
+                    trabajo durante 15 a 20 minutos. Cabe destacar que Tucu- mán fue
+                    pionero con la actividad física en los lugares de trabajo. Luego, se
+                    comenzó a realizar actividad física en las plazas y parques contando
+                    con una ambulancia del 107 en cada espacio. <br />
+                    Tucumán empezó con “Las entradas en calor” en las distintas
+                    actividades que se ha- cían en las maratones en donde se convocaba a
+                    los profesores del sistema de salud para iniciar las entradas en
+                    calor. Hoy, se sigue haciendo. <br />
+                    También hemos sido pioneros en las “Pausas Activas” en congresos,
+                    simposios, etc. En los nodos de vacunación, realizando actividad
+                    física mientras se espera la aplica- ción de las mismas. Tucumán
+                    siempre estuvo posicionado a nivel nacional e interna- cional en la
+                    actividad física como promotora de salud.”</p>
+              </section>
+          </section>
+          <section class="section-7">
+
+              <!-- Author -->
+              <section class="author">
+
+                  <img class="author-img" src="./resources/fotoMinistro.jpg" alt="author-img">
+                  <section class="author-info">
+
+                      <p class="author-name">Dr. Cayetano Bellomio</p>
+                      <p class="author-description">Coordinador del programa</p>
+                  </section>
+              </section>
+              <!-- Highlighted Content -->
+              <section class="highlight-content">
+
+                  <p>“Fuimos diseñados para el movimiento. Casi la mitad de nuestro peso es
+                    músculo. Esto resultó fundamental para la sobrevivencia y largos
+                    desplazamientos del ser humano. Los avances tecnológicos fueron
+                    disminuyendo esas exigencias, pero el cuerpo no cambió y la
+                    inmovilidad emergente trajo consecuencias graves que aún no terminamos
+                    de apreciar. Invadió todas las edades. La padecen los adolescentes y
+                    adultos, precipita a los ma- yores a la sarcopenia haciéndolos
+                    dependientes. Y lo más preocupante, es que ya tenemos niños
+                    sedentarios y con problemas de salud como consecuencia. <br />
+          
+                    Pareciera que la sociedad actualmente entiende este riesgo, sin
+                    embargo, cada uno lo siente como ajeno. Hay algo más grave: la
+                    aparición de trastornos metabólicos por no quemar las sustancias
+                    energéticas de las que disponemos y el consecuente incremento de
+                    enfermedades no transmisibles como diabetes, arteriosclerosis y
+                    sobrepeso, que van en aumento y tienen un alto costo social.
+                    <br />
+          
+                    Romper ese círculo vicioso es, además de simple, muy agradable: una
+                    caminata diaria, que bien puede ser parte del camino a nuestro
+                    trabajo, una bicicleteada con nuestros amigos y familia, aumentar las
+                    actividades cotidianas, utilizar las escaleras en forma progresiva.
+                    Quienes incrementan su actividad física, se predisponen a adoptar
+                    otros há- bitos de vida saludables, como mejorar su alimentación o
+                    abandonar hábitos tóxicos.
+                    <br />
+          
+                    Tenemos que aprovechar ese aparato locomotor que nos fue útil para
+                    sobrevivir como especie, vivir mejor y evitar consecuencias que no
+                    aparecen en lo inmediato pero sí con el correr de pocos años. Es hora
+                    de animarnos a comenzar a movernos y adoptar hábitos saludables. De
+                    este modo, estaremos dando un mensaje a nuestros hijos y a nuestros
+                    seres queridos: el ejemplo es la mejor manera de enseñar”.
+                  </p>
+              </section>
+          </section>
+          <section class="section-8">
+
+              <!-- Author -->
+              <section class="author">
+
+                  <img class="author-img" src="./resources/fotoMinistro.jpg" alt="author-img">
+                  <section class="author-info">
+
+                      <p class="author-name">Dr. David Strasorier</p>
+                      <p class="author-description">Coordinador del programa</p>
+                  </section>
+              </section>
+              <!-- Highlighted Content -->
+              <section class="highlight-content">
+
+                  <p>
+                    “Durante mucho tiempo la gran mayoría de los programas de salud
+          tuvieron la perspecti- va de la enfermedad como dispositivo de
+          intervención. En este sentido, un programa está dirigido a abordar la
+          asistencia y recuperación de las personas con base en patologías
+          prevalentes o preexistentes. Visto como una cuestión que requiere
+          intervenciones inte- grales, los programas tienen en gran parte, una
+          mirada sesgada que pone su énfasis en el proceso enfermedad.
+          <br />
+
+          Ya en las puertas de la tercera reforma del sistema de salud, el
+          Ministerio de Salud de la Provincia de Tucumán presenta el Programa
+          “Se mueve Tucumán”, una estrategia que enfatiza la actividad física
+          como recurso integrante del proceso salud-enfermedad, pero que a
+          diferencia de otros, su perspectiva está puesta en la prevención y
+          promoción. Un programa que recupera y fortalece acciones que ya se
+          realizan desde el Ministerio de Sa- lud y que propone un “modo de
+          hacer salud”. “Se mueve Tucumán” habla de prevención, promoción,
+          protección, cuidados, vínculos, atención, acompañamiento,
+          comunicación, capacitación y sobre todo, de una mejor calidad de vida
+          para todos los tucumanos y tucumanas”.
+                  </p>
+              </section>
+          </section>
+        </section>
       <hr />
       <section id="galeria">
         <article class="galeria-intro">
@@ -485,57 +350,68 @@
           <figcaption>Pausa activa con el personal de salud</figcaption>
         </figure>
       </section>
+      <!--SECCION CONTACTANOS-->
+      <section>
+        <article class="container py-4">
+          <h2 class="display-3 pb-3">Envíanos tu consulta</h2>
+          <hr class="border border-primary">
+          <div class="row row-cols-1 row-cols-lg-2 g-4 pt-3">
+            <div class="col">
+              <form class="border border-1 rounded-4 p-3 shadow-lg h-100 p-lg-5" id="formConsulta">
+                <div class="mb-3">
+                  <label for="consultaNombre" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" name="Nombre" id="consultaNombre" placeholder="Ej. Juan Pérez" maxlength="60" minlength="2" pattern="[a-zA-Z\u00C0-\u00FF\s]+">
+                </div>
+                <div class="mb-3">
+                  <label for="consultaEmail" class="form-label">Correo electrónico *</label>
+                  <input type="email" class="form-control" id="consultaEmail" placeholder="Ej. JuanPerez@mail.com" required="" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" maxlength="60" autocomplete="on" spellcheck="false">
+                </div>
+                <div class="mb-3">
+                  <label for="consultaComentario" class="form-label">Consulta *</label>
+                  <textarea class="form-control" name="Consulta" id="consultaComentario" rows="5" placeholder="Escribe lo que quieras consultarnos..." required="" minlength="5" maxlength="600"></textarea>
+                </div>
+                <div class="d-grid gap-2">
+                  <button type="submit" id="btnEnviarConsulta" class="btn btn-primary">Enviar Consulta</button>
+                </div>
+              </form>
+            </div>
+            <div class="col d-flex flex-column gap-2 gap-lg-4">
+              <div class="row row-cols-1 row-cols-md-2 g-1 g-lg-3 h-100">
+                <div class="col">
+                  <div class="card rounded-4 h-100 shadow-sm">
+                    <div class="card-body">
+                      <h3 class="card-title"><i class="bi bi-info-circle-fill px-2"></i>Info de Contacto</h3>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Email:</strong> academy@gmail.com</li>
+                        <li class="list-group-item"><strong>Teléfono:</strong> +54 9 381 680-0940</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card rounded-4 h-100 shadow-sm">
+                    <div class="card-body">
+                      <h3 class="card-title"><i class="bi bi-geo-alt-fill px-2"></i>Ubicación</h3>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Dirección:</strong> Direccion 123</li>
+                        <li class="list-group-item"><strong>Ciudad:</strong> San Miguel de Tucumán</li>
+                        <li class="list-group-item"><strong>Provincia:</strong> Tucumán</li>
+                        <li class="list-group-item"><strong>País:</strong> Argentina</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d890.0798076720062!2d-65.20654260279987!3d-26.829797008900588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgoogle%20maps!5e0!3m2!1ses!2sar!4v1690820011376!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100 rounded-4"></iframe>
+              </div> -->
+            </div>
+          </div>
+        </article>
+      </section>
     </main>
-    <!-- <footer>
-      <div>
-        <p class="mb-0">
-          &copy; Ministerio de Salud Pública de Tucumán. Todos los derechos
-          reservados 2023
-          <br />
-          Creador:
-          <a
-            href="https://www.linkedin.com/in/joaqu%C3%ADn-guillermo-andrada-9b892121a/"
-            target="_blank"
-            class="creator-link"
-            >Andrada Joaquin Guillermo</a
-          >
-          <br />
-          Github:
-          <a
-            href="https://github.com/GuillermoA231"
-            target="_blank"
-            class="github-link"
-            >github.com/GuillermoA231</a
-          >
-        </p>
-      </div>
-      <div>
-        <p>
-          Para obtener más información y participar en el programa, puedes
-          contactar a los coordinadores:
-        </p>
-        <ul>
-          <li>Dr. Cayetano Bellomio</li>
-          <li>Dr. David Strasorier</li>
-        </ul>
-        <p>
-          Coordinación del documento:
-          <a href="mailto:documentacionestrategica@msptucuman.gov.ar"
-            >documentacionestrategica@msptucuman.gov.ar</a
-          >
-        </p>
-        <p>© Ministerio de Salud Pública de Tucumán</p>
-      </div>
-    </footer> -->
+    <footer></footer>
+    <script src="./js/app.js"></script>
+    <script src="test.js"></script>
   </body>
-  <script src="./js/app.js"></script>
-  <script
-    src="https://kit.fontawesome.com/a9c1862077.js"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"
-  ></script>
 </html>
