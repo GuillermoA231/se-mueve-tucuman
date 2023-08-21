@@ -4,6 +4,7 @@
   height: 100%;
   align-items: center;
   font-family: Arial;
+  margin: 5em 0px;
 }
 .carousel__list {
   display: flex;
@@ -29,17 +30,17 @@
     padding: 10em 0em;
     position: absolute;
     transition: all 0.3s ease-in;
-    overflow-y: auto;
   }
-::-webkit-scrollbar {
-  width: 0.5em; /* Set a width to create the space for scrollbar */
+/* ::-webkit-scrollbar {
+  width: 0.5em; 
 }
 ::-webkit-scrollbar-track {
-  background-color: transparent; /* You can change this to a color if needed */
+  background-color: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: transparent; /* You can change this to a color if needed */
-}
+  background-color: transparent;
+} 
+*/
 .carousel__item:nth-child(1) {
   background: linear-gradient(45deg, #2d35eb 0%, #904ed4 100%);
 }
